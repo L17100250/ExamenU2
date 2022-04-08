@@ -1,0 +1,21 @@
+<h3>Eliminar Producto</h3>
+@model Producto
+<form action="EliminarProducto" method="post">
+    <div>
+        <label>ID del Producto:</label>
+        <input asp-for="IDproducto" />
+    </div>
+
+    <div>
+        <label>Nombre del producto:</label>
+        <input asp-for="Descripcion" />
+    </div>
+
+    <div>
+        <label>Precio:</label>
+        <input asp-for="Precio" />
+    </div>
+
+    <button class="btn-danger" type="submit">Eliminar</button>
+    <a class="btn btn-info btn-sm" asp-action="Index">Cancelar</a>
+</form>

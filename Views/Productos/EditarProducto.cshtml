@@ -1,0 +1,21 @@
+@model Producto
+
+<h3>Editar Producto</h3>
+<form action="EditarProducto" method="post">
+    <div>
+        <label>ID Producto:</label>
+        <input asp-for="IDproducto" />
+    </div>
+
+    <div>
+        <label>Nombre del producto:</label>
+        <input asp-for="Descripcion" />
+    </div>
+
+    <div>
+        <label>Precio:</label>
+        <input asp-for="Precio" />
+    </div>
+
+    <button type="submit">Guardar</button>
+</form>

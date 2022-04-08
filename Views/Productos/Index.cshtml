@@ -1,0 +1,20 @@
+@model List<Producto>
+
+<h3>Productos</h3>
+
+<table class="table table-striped table-hover">
+    @foreach (Producto p in Model)
+    {
+        <tr>
+            <td>@p.IDproducto</td>
+            <td>@p.Descripcion</td>
+            <td>@p.Precio</td>
+            <td><a asp-action="EditarProducto" asp-route-NControl="@p.IDproducto">Editar</a></td>
+            <td><a asp-action="EliminarProducto" asp-route-NControl="@p.IDproducto.">Eliminar</a></td>
+        </tr>
+    }
+</table>
+
+<a class="btn btn-primary" asp-action="AgregarProducto">Agregar Producto</a>
+
+<a class="btn btn-primary" asp-action="Agregar5Productos">Agregar 5 Productos</a>

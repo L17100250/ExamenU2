@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    //var nombre = "Jose Aguiñaga";
+}
+
+<div class="text-center">
+    
+    
+
+    @if (DateTime.Now.Hour < 12)
+    {
+        <p>Buenos días bienvenido al sistema web de productos</p>
+    }
+    else
+    {
+        <p>Buenos tardes bienvenido al sistema web de productos</p>
+    }
+</div>
